@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Roboto", sans-serif;
+  /*width: 1024px;*/
+}
+
+header p{
+  font-size: 15px;
+  background-color: #1cd1b0;
+  padding: 10px 27px 10px 27px;
+}
+
+main h1{
+  width: 100%;
+  font-size: 40px;
+  padding: 28px 28px 26px 28px;
+  background-color: #00669f;
+  position: sticky;
+  top:0px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+section{
+  /*width: 1024px;*/
+  display: flex;
+  justify-content:space-around;
+  flex-wrap:wrap;
+}
+
+article{
+  width: 300px;
+  margin: 40px 10px ;
+  position:relative;
+  text-align: center;
+  background-color: pink;
+  border-radius: 16px 16px 0px 0px;
+  box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.75);
+}
+article div{
+  background-image: url(../img/fondoBatman.png);
+  height: 193px;
+  padding: 16px 21px;
+  border-radius: 16px 16px 0 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: left;
+}
+article div.bg-HQ{
+    background-image: url(../img/fondoHQ.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  article div.bg-Superman{
+    background-image: url(../img/fondoSuperman.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+article div i{
+  font-size: 25px;
+  color: red;
+}
+article img{
+  width: 128px;
+  border-radius: 50%;
+  position: absolute;
+  left: 90px;
+  top: 128px;
+}
+article h4{
+  margin-top: 75px;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+article p{
+  text-align: left;
+  font-size: 16px;
+  margin: 16px;
+}
+article button{
+  margin: 37px 0px 18px 0;
+  color: white;
+  background-color: #00669f;
+  padding: 15px 37px;
+  border: none;
+}
+
+footer{
+  background-color: #00669f;
+  color: white;
+  font-size: 16px;
+  padding: 16px;
+}
+footer span{
+  text-transform: uppercase;
+}
+
+@media (max-width:768px){
+main section{
+  flex-direction: column;
+  
+}
+article{
+  margin:20px ;
+  
+ }
+}
+@media (max-width:350px){
+  main section{
+    flex-direction: column;
+    
+  }
+  article{
+    margin:20px ;
+    
+   }
+  article.super{
+    display: none;
+  }
+  }
